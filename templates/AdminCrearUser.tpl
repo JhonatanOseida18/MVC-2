@@ -1,23 +1,28 @@
-<div class="row justify-contend-md-center">
+<div align="center">
+<h1>CREAR USUARIO</h1> 
+</div>
+<br>
 <div class="col">
-<br><h1>Crear Usuario</h1><br>
-<form method="post" action="">
-<div class="form-group">
-<label for="usuario">Usuario</label>
-<input type ="text" class="form-control" id="usuario" name="usuario" aria-describedby="emailHelp">
-</div><br>
+<form method="post" action=""> 
+<div class="form-group " >
+ <label for="usuario">Usuario</label>
+ <input name="usuario" type="text" class="form-control" id="usuario" aria-describedby="emailHelp">
+ </div>
 <div class="form-group">
 <label for="password">Password</label>
-<input type ="password" class="form-control" id="password" name="password" aria-describedby="emailHelp">
+<input name="password" type="password" class="form-control" id="password">
+<small id="usuario" class="form-text text-muted">INGRESE PASSWORD</small>
 </div><br>
 <div class="form-group">
-<label for="tipo"Tipo de trabajador</label>
-<select class="form-control"name="tipo" id="tipo">
-<option value="Trabajador"Trabajador</option>
-<option value="Administrador"Administrador</option>
+<label for="tipo">Tipo Trabajador</label>
+<select class="form-control" id="tipo" name="tipo">
+<option value="Trabajador">Trabajador</option>
+ <option value="Administrador">Administrador</option>
 </select>
-</div><br>
-<button type="submit" class="btn btn-primary">Guardar Usuario</button>
+</div><br/>
+<br/>
+<button type="submit" class="btn btn-primary" >Guardar Usuario</button>
 </form>
+</div>
 </div>
 </div>

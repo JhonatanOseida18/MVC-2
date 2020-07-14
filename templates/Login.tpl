@@ -1,33 +1,32 @@
-<div class="row justify-content-md-center">
-  <div class="col-6">
-    <header> 
-      <div align="center" id="ENCABEZADO">
-        <h1>REGISTRO</h1>
-      </div>
-    </header>
-    <section>
-       <div id="CONTENIDO">
-          <form method="post" action="USUARIOS.php">
-            <div class="form-group">
-              <label for="NOMBRE" >NOMBRE</label>
-              <input type="text" name="NOMBRE" class="form-control" placeholder="Ingrese Usuario" required>
+</br></br></br>
+    <div align="center" id="ENCABEZADO">
+        <h1>LOGIN</h1>
+    </div>
+</br>
+    <div class="container-fluid" id="CONTENIDO">
+        <div class="row justify-content-center" >
+            <div class="col-4 " >
+                <form method="post" action="?controller=User&action=ValidarUsuario"> 
+                    <div class="form-group " >
+                        <label for="usuario">Usuario</label>
+                        <input name="usuario" type="text" class="form-control" id="usuario" aria-describedby="emailHelp">
+                        <small id="usuario" class="form-text text-muted">Ingrese su usuario</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input name="password" type="password" class="form-control" id="password">
+                        <small id="usuario" class="form-text text-muted">Ingrese password de usuario</small>
+                    </div>
+                    <select class="form-control" id="tipo" name="tipo">
+                        <option value="Trabajador">Trabajador</option>
+                        <option value="Administrador">Administrador</option>
+                    </select>
+                    </br></br>
+                    <div align="center">
+                      <button type="submit" class="btn btn-primary" >Ingresar</button>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-              <label for="CONTRASEÑA">CLAVE</label>
-              <input type="password" class="form-control" name="CONTRASEÑA" placeholder="Ingrese Clave" required>
-            </div>
-            <div class="form-group">
-              <label for="TIPO">TIPO DE USUARIO</label>
-              <select class="form-control" name="TIPO" id="TIPO">
-                <option value="TRABAJADOR">Trabajador</option>
-                <option value="ADMINISTRADOR">Administrador</option>
-              </select>
-            </div>
-            <div class="form-group" align="center">
-              <input type="submit" value="INGRESAR" class="btn btn-primary btn-lg" required>
-            </div>
-          </form>
-       </div>
-    </section>
-  </div>
-</div>
+        </div>
+    </div>
+
